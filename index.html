@@ -38,11 +38,25 @@
       max-width: 250px;
       border-radius: 8px;
     }
+
+    /* Mobile / small screen adjustments */
+    @media (max-width: 768px) {
+      .bio {
+        flex-direction: column; /* stack image above text */
+        align-items: center;
+      }
+      .bio img {
+        max-width: 80%; /* scale image for mobile */
+        margin-bottom: 1em;
+      }
+      .bio div {
+        text-align: left;
+      }
+    }
   </style>
 </head>
 <body>
 
-<!-- Copy this nav to every page -->
   <nav>
     <a style="color: gray;" href="index.html">Home</a>
     <a href="events.html">Events</a>
@@ -68,4 +82,3 @@
 
 </body>
 </html>
-
