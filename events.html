@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title> AoT Graz - Events </title>
+  <title>Events</title>
   <style>
     body {
       font-family: sans-serif;
@@ -25,15 +25,38 @@
       font-weight: bold;
     }
     .container {
-      max-width: 800px;
+      max-width: 1050px;
       margin: 2em auto;
       padding: 0 1em;
+    }
+    .bio {
+      display: flex;
+      align-items: center;
+      gap: 1.5em;
+    }
+    .bio img {
+      max-width: 350px;
+      border-radius: 8px;
+    }
+
+    /* Mobile / small screen adjustments */
+    @media (max-width: 768px) {
+      .bio {
+        flex-direction: column; /* stack image above text */
+        align-items: center;
+      }
+      .bio img {
+        max-width: 80%; /* scale image for mobile */
+        margin-bottom: 1em;
+      }
+      .bio div {
+        text-align: left;
+      }
     }
   </style>
 </head>
 <body>
 
-  <!-- Copy this nav to every page -->
   <nav>
     <a href="index.html">Home</a>
     <a style="color: gray;" href="events.html">Events</a>
@@ -42,16 +65,19 @@
   </nav>
 
   <div class="container">
-    <h1 style="color: black;"  >Events</h1>
-    <p>  
-<!--      Astronomy on Tap, Graz events are planned to start in early 2026. Dates TBD, so keep an eye on our socials - <a href="https://linktr.ee/aotgraz">AoT Graz </a>. ;) -->
-    The first event is planned on January 27th 2026 from 20:00 - 21:30. The speakers are Sierk van Terwisga (Planet forming disks) and Elias Ehl (Titan- the only moon with an atmosphere). 
-
-    
-    </p>
+    <div class="bio">
+      <img src="images/latest.jpeg" alt="AoT Graz"/>
+      <div>
+        <h1 style="color: black;" > Next event</h1>
+        <p> Tuesday, February 24th 2026, 8:00 pm in Hops Pub. See the nice post for details! :) </p>
+	<p> </p>
+        <h1 style="color: black;" > Past events</h1>
+	<p> January 27th 2026: </p>
+	<p> Dr. Sierk van Terwisga (The birthplaces of planets: zooming in on protoplanetary disks) and Elias Ehl, PhD candidate (Titan: A Moon Full of Glaciers, Rivers and Methene Rain)  </p>
+	<p> </p>
+      </div>
+    </div>
   </div>
-
 
 </body>
 </html>
-
